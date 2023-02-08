@@ -1,6 +1,13 @@
-#include <stdlib.h>
+#ifndef PROJECT2_LIBRARY_H
+#define PROJECT2_LIBRARY_H
 
-const double pie = 3.1415926;
-#define degree(x) (x*pie)/180.0
+#include <stdlib.h>
+#include <math.h>
+#include <stdio.h>
+
+#define dle(x) (x/1.0)
 
 float input(const char ch[]);
+void super_loop();
+
+#endif //PROJECT2_LIBRARY_H
