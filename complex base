@@ -1,0 +1,20 @@
+#include <complex.h>
+#include <stdio.h>
+
+double complex_numbers(double * real, double * imag)
+{
+    // the complex number itself
+	double complex z = CMPLX(real, imag);
+	// conjugated complex number
+	double complex conj_f = conjf(z);
+	printf("z = %.1lf + %.1lfi\n", creal(conj_f), cimag(conj_f));
+	// abs function
+	printf("Absolute value = %.1f", cabsf(z));
+	// phase function
+    printf("Phase Angle = %.1f radians\n", cargf(z));
+}
+// int main() {
+//     double real,imag;
+//     scanf("%lf%lf",&real,&imag);
+//     complex_numbers(&real,&imag);
+// }
